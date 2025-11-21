@@ -359,7 +359,7 @@ def main(args):
     if not args.use_gmm:
         evaluate_nn(
             model_paths=config["checkpoint"].get("paths", []),
-            datasets_paths=[args.asv_path, args.wavefake_path, args.celeb_path],
+            datasets_paths=[args.asv_path],
             model_config=config["model"],
             data_config=config["data"],
             amount_to_use=args.amount,
